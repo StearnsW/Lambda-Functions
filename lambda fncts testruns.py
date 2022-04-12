@@ -67,9 +67,9 @@ for neighborhood in sorted(neighborhood_set):
     avg_tt=sum_total_time/len(neighborhood_total_time_list)
     
     neighborhoods_dictionary_list.append({'neighborhood':neighborhood,'average dispatch time':avg_dt,'average total response time':avg_trt,'average total time':avg_tt})
-print(neighborhoods_dictionary_list)
-
-
+json_file=open('nieghborhood stats.json','w') # open the file to edit
+json.dump(neighborhoods_dictionary_list,json_file)
+file.close()
 
 
 
