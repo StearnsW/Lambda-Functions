@@ -1,8 +1,7 @@
 import json
 from functools import reduce
 import csv
-from pickletools import decimalnl_short
-from statistics import mean
+
 file=open(r"C:\Users\willi\Downloads\911_Calls_for_Service_(Last_30_Days).csv",'r')
 reader = csv.DictReader(file)
 data_dictionary_list=[]
